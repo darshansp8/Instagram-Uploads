@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 1;
+}
+
+nav img{
+    width: 20%;
+}
+.left, .right{
+    display: inline-block;
+    vertical-align: top;
+    padding: 50vh 0;
+}
+.left{
+    position: relative;
+    width: 49.5%;
+    /* background-image: linear-gradient(to bottom right, rgba(108, 99, 255, 1), rgba(108, 99, 255, .8)), url("coffee_table.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -10%;
+    clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%);
+    -moz-clip-path: polygon(0 0, 100% 0, 74% 100%, 0% 100%); */
+
+}
+
+.left h1{
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    font-size: 2rem;
+    color: #3d343d;
+    margin-bottom: 1%;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+.left h1 span{
+    /* color: #ffffff; */
+    color: rgb(108, 99, 255);
+    font-size: 2.5rem;
+}
+
+.left .quote{
+    position: absolute;
+    top: 36%;
+    left: 20%;
+    font-size: 1.3rem;
+    width: 60%;
+    color: #3d343d;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+.left .author{
+    position: absolute;
+    top: 47%;
+    left: 20%;
+    color: rgb(108, 99, 255);
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    /* color: #ffffff; */
+}
+
+.left img{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 50%;
+    animation-name: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+.right{
+    position: relative;
+    width: 49.7%;
+    /* background-color: green; */
+}
+
+.form_title{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.form_title h1{
+    font-size: 2rem;
+    margin-bottom: .5vh;
+    /* color: rgb(14, 95, 200); */
+    color: rgb(108, 99, 255);
+}
+
+.form_class{
+    position: absolute;
+    top: 30%;
+    width: 90%;
+    /* margin-left: 5%; */
+    /* background-color: yellow; */
+}
+
+.form_grp{
+    width: 50%;
+    display: inline-block;
+    margin-left: 22.5%;
+    padding: .5vh;
+}
+
+.form_grp input, .form_grp button{
+    width: 100%;
+    padding: 1vh 1vw;
+}
+
+.form_grp input, .from_grp button{
+    outline: none;
+    /* border: none; */
+}
+
+.form_grp input{
+    border-radius: 6px;
+    /* border: 1px solid rgb(14, 95, 200); */
+    border: 1px solid rgb(108, 99, 255);
+    color: #3d343d;
+}
+
+.form_grp button{
+    width: 110%;
+    /* background-color: rgb(14, 95, 200); */
+    background-color: rgb(108, 99, 255);
+    color: #fff;
+    border-radius: 6px;
+    border: 0px;
+}
+
+.form_grp span a{
+    text-decoration: none;
+    color: rgb(108, 99, 255);
+}
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+        visibility: hidden;
+    }
+
+    80%{
+        transform: translateX(10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+        visibility: hidden;
+    }
+
+    80%{
+        transform: translateX(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100px) scale(.8);
+        visibility: hidden;
+    }
+
+    80%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steamy Mugs</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li>Steamy Mugs</li>
+                <li>Menu</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Register</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header> -->
+    <nav>
+        <img src="logo_white.png" alt="Logo">
+    </nav>
+    <section class="left">
+        <h1>Welcome to <span>Steamy Mugs!</span></h1>
+        <p class="quote">“Good communication is just as stimulating as black coffee, and just as hard to sleep after”</p>
+        <p class="author">– Anne Morrow Lindbergh</p>
+        <!-- <img src="coffee.svg" alt="Coffee"> -->
+    </section>
+    <section class="right">
+        <div class="form_title">
+            <h1>Sign Up</h1>
+            <p>Your account is just a few seconds away!</p>
+        </div>
+        <form action="#" method="POSt" class="form_class">
+            <div class="form_grp">
+                <input id="fname" type="text" placeholder="First Name" required>
+            </div>
+            <div class="form_grp">
+                <input id="lname"type="text" placeholder="Last Name" required>
+            </div>
+            <div class="form_grp">
+                <input id="myDate" type="text" placeholder="Date of birth" onfocus="(this.type='date')" onblur="(this.type='text')">
+            </div>
+            <div class="form_grp">
+                <input id="phone" type="tel" placeholder="Mobile Number" pattern="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]">
+            </div>
+            <div class="form_grp">
+                <input id="email" type="email" placeholder="Email" required>
+            </div>
+            <div class="form_grp">
+                <input id="pwd1" type="password" pattern=".{8,}"
+                placeholder="Enter Password" title="Eight or more characters" required>
+            </div>
+            <div class="form_grp">
+                <input type="password" id="pwd2" pattern=".{8,}" placeholder="Confirm Password" title="Eight or more characters" required>
+            </div>
+            <div class="form_grp">
+                <button type="submit">Create your free account &nbsp;&nbsp;&nbsp;&nbsp;&rarr;</button>
+            </div>
+            <div class="form_grp">
+                <span id="login">Already have an account? <a href="#">Sign in</a></span>
+            </div>
+            
+        </form>
+    </section>
+</body>
+</html>
